@@ -1,0 +1,39 @@
+<div class="fadeIn" [class]="type == 0 ? 'card' : type == 1 ? 'cardGreen' : type == 2 ? 'cardRed' : 'card'">
+  <p class="title">{{title}}</p>
+
+  <img class="banner" src="assets/img/test.png" alt="cardImg">
+
+  <div [style.display]="type == 0 ? 'flex' : 'none'" class="flex-col w-full">
+    <div class="flex-row ai-center jc-between w-full">
+      <p class="info">Tasks</p>
+      <p  class="info">{{tasks}}</p>
+    </div>
+  
+    <div class="flex-row ai-center jc-between w-full">
+      <p>Completed</p>
+      <div class="flex-row ai-center">
+        <img src="assets/icons/icon=circleCheck.svg" alt="icon" height="14px" draggable="false">
+        <p>{{completed}}</p>
+      </div>
+    </div>
+  
+    <div class="flex-row ai-center jc-between w-full">
+      <p>Todo</p>
+      <div class="flex-row ai-center">
+        <img src="assets/icons/icon=circle.svg" alt="icon" height="14px" draggable="false">
+        <p>{{todo}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div [style.display]="type >= 3 ? 'flex' : 'none'" class="flex-col w-full">
+    <div class="flex-row ai-center jc-between w-full">
+      <p class="info">Limit date:</p>
+      <div class="flex-row ai-center">
+        <p class="info">{{limitDate}}</p>
+      </div>
+    </div>
+    <p>{{description}}</p>
+  </div>
+  
+</div>

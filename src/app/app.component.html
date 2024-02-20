@@ -1,0 +1,43 @@
+<img class="bgImg" src="assets/img/banner0.png" alt="pic" draggable="false">
+<main class="">
+  <div class="glassBox fadeIn">
+    <img src="assets/logo.png" alt="pic" height="48px" draggable="false">
+  </div>
+  <p class="blueText fs-32">Shuffle away the chaos in software project management! <br>
+    Our app deals tasks like a pro, <br>
+    turning your project into <br>
+    a winning hand.</p>
+    <div class="hero">
+      <card [tasks]="48" title="App Dev" [type]="0" [completed]="16" [todo]="32"></card>
+      <div class="cardHolder">
+        <card class="ch-1" [tasks]="0" title="Completed" [type]="1"></card>
+        <card class="ch-2" title="Ux Task" [type]="3" [limitDate]="'04/04/24'" [description]="'Task description...'"></card>
+        <card class="ch-3" title="Ui Task" [type]="3" [limitDate]="'04/04/24'" [description]="'Task description...'"></card>
+      </div>
+
+      <div class="cardHolder">
+        <card class="ch-1" [tasks]="0" title="Todo" [type]="2"></card>
+        <card class="ch-2" title="Ux Task" [type]="3" [limitDate]="'04/04/24'" [description]="'Task description...'"></card>
+        <card class="ch-3" title="Ui Task" [type]="3" [limitDate]="'04/04/24'" [description]="'Task description...'"></card>
+      </div>
+    </div>
+    <div class="flex-row ai-center gap20">
+      <a class="btn ghost">
+        <img src="assets/icons/icon=user.svg" alt="icon" height="14px" draggable="false">
+        <p>Login</p>
+      </a>
+      <a class="btn">
+        <img src="assets/icons/icon=next.svg" alt="icon" height="14px" draggable="false">
+        <p>Register</p>
+      </a>
+    </div>
+    
+  <p class="blueText">As easy as dealing a deck of cards.</p>
+  <p>by {{developer}}</p>
+  <div>
+    <p>Velodeck</p>
+  </div>
+</main>
+
+
+<router-outlet />

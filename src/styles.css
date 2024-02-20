@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  color: white;
+  background: rgb(31,31,48);
+  background: linear-gradient(135deg, rgba(31,31,48,1) 0%, rgba(24,23,41,1) 100%);
+
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,b,p{
+  line-height: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.ai-start{
+  align-items: flex-start;
+}
+.ai-center{
+  align-items: center;
+}
+.ai-end{
+  align-items: flex-end;
+}
+.jc-start{
+  justify-content: flex-start;
+}
+.jc-center{
+  justify-content: center;
+}
+.jc-end{
+  justify-content: flex-end;
+}
+.jc-between{
+  justify-content: space-between;
+}
+.jc-around{
+  justify-content: space-around;
+}
+.w-full{
+  width: 100%;
+}
+
+.gap8{
+  gap: 8px;
+}
+
+.gap12{
+  gap: 12px;
+}
+
+.gap16{
+  gap: 16px;
+}
+
+.gap20{
+  gap: 20px;
+}
+
+.gap24{
+  gap: 8px;
+}

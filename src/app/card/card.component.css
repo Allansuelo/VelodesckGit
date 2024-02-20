@@ -1,0 +1,96 @@
+
+.card{
+  padding: 8px;
+  font-size: 16px;
+  background: #e0e0e033;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #ffffff33;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+
+  width: 142px;
+  min-width: 142px;
+  height: 192px;
+}
+
+.cardGreen{
+  padding: 8px;
+  font-size: 16px;
+  background: #c0dab533;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #daffd133;
+  color: #D1FFAC;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+
+  width: 142px;
+  min-width: 142px;
+  height: 192px;
+}
+
+.cardRed{
+  padding: 8px;
+  font-size: 16px;
+  background: #dab5b533;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #ffd1d133;
+  color: #ffacac;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+
+  width: 142px;
+  min-width: 142px;
+  height: 192px;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.info{
+  font-size: 12px;
+  font-weight: 200;
+}
+
+
+
+.banner{
+  object-fit: cover;
+  width: 100%;
+  height: 32px;
+  border-radius: 12px;
+  border: 1px solid #ffffff33;
+}
+
+.fadeIn{
+  animation: fadeIn 2s ease-out 300ms 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
